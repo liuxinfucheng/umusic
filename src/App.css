@@ -1,0 +1,17 @@
+/* 主组件样式 */
+.box{
+    border: 1px solid orangered;
+}
+html{
+    font: 14px/1.5 Helvetica,sans-serif,STHeiTi;
+}
+
+.select{
+    color: orangered;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}

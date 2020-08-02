@@ -1,0 +1,103 @@
+.rank{
+    font-size: 20px;
+}
+.rank .hotop:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.2);
+}
+.rank .hotop{
+    width: 100%;
+    position: relative;
+    padding-top: 38.9%;
+    overflow: hidden;
+    background: url(//s3.music.126.net/mobile-new/img/hot_music_bg_2x.jpg?f01a252…=) no-repeat;
+    background-size: contain;
+}
+.rank .hotop .hoticon{
+    position: absolute;
+    top: .5rem;
+    left: .6rem;
+    width: 142px;
+    height: 67px;
+    background: url(../images/热歌榜.png) no-repeat -24px -30px;
+    background-size: 166px 97px;
+    z-index: 2;
+}
+.rank .hotop .hotime{
+    position: absolute;
+    top: 1.8rem;
+    left: 0.6rem;
+    color: #fff;
+    margin-top: 0.1rem;
+    font-size: 12px;
+    z-index: 2;
+}
+.rank .songList{
+    display: flex;
+    width: 100%;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    padding-left: .3rem;
+}
+
+.rank .songList .songLeft{
+    width: 0.8rem;
+}
+.rank .songList .songRight{
+    flex: 1;
+}
+
+/* 歌单 */
+.rank .newsong_list li.newsong_li{
+    padding: 6px 0;
+}
+.rank .newsong_list li.newsong_li:last-child{
+    padding-bottom: 0;
+}
+.rank .newsong_list li.newsong_li .content{
+    display: flex;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+.rank .newsong_list li.newsong_li .name{
+    font-size: 17px;
+}
+.rank .newsong_list li.newsong_li .singer{
+    font-size: 12px;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+.rank .newsong_list li.newsong_li i:before{
+    color: #888;
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-right: 4px;
+}
+.rank .newsong_list li.newsong_li i.icon-sq:before{
+    color: orangered;    
+}
+.rank .newsong_list .hotdn{
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+.rank .newsong_list .hotdn .hotview{
+    display: inline-block;
+    color: #999;
+    padding-right: 14px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAyMiI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2NjIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTEgMWwxMCAxMEwxIDIxIi8+PC9zdmc+) 100% no-repeat;
+    background-size: 7px 12px;
+    font-size: 14px;
+}

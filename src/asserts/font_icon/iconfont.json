@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "236418",
+      "name": "SQ",
+      "font_class": "sq",
+      "unicode": "e75f",
+      "unicode_decimal": 59231
+    },
+    {
+      "icon_id": "1893516",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e514",
+      "unicode_decimal": 58644
+    },
+    {
+      "icon_id": "9434896",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "ec73",
+      "unicode_decimal": 60531
+    },
+    {
+      "icon_id": "12467731",
+      "name": "耳机",
+      "font_class": "erji",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
