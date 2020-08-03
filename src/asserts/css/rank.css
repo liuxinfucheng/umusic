@@ -69,9 +69,14 @@
 }
 .rank .newsong_list li.newsong_li .name{
     font-size: 17px;
+    width: 5.8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .rank .newsong_list li.newsong_li .singer{
     font-size: 12px;
+    width: 5.8rem;
     color: #888;
     overflow: hidden;
     text-overflow: ellipsis;
