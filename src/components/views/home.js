@@ -160,8 +160,11 @@ export default class Home extends React.Component{
         // }
         // ))
 
+        // 歌单
         this.getPersonalized()
+        // 轮播图
         this.getBanner()
+        // 最新音乐
         this.getnewSongs()
     }
     // 获取推荐歌单
@@ -213,12 +216,22 @@ export default class Home extends React.Component{
 
     // 跳转歌单列表
     goSongSheet(id){
-        console.log(id);
+        this.props.history.push({
+            pathname: '/detail',
+            state: {
+                id
+            }
+        })
     }
 
     // 跳转播放界面
     goPlay(id){
-        console.log(id);
+        this.props.history.push({
+            pathname: '/play',
+            state: {
+                id
+            }
+        })
     }
 
     // 打开app

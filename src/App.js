@@ -11,6 +11,7 @@ import './App.css';
 import Index from './components/pages/index';
 import List from './components/pages/list';
 import Play from './components/pages/play';
+import Detail from './components/pages/detail';
 
 // 创建组件
 class App extends React.Component{
@@ -20,6 +21,7 @@ class App extends React.Component{
             <Switch>
                 <Route path='/index' component={Index}></Route>
                 <Route path='/list' component={List}></Route>
+                <Route path='/detail' component={Detail}></Route>
                 {/* 动态路由 */}
                 <Route path='/play' component={Play}></Route>
                 <Redirect to='/index'></Redirect>

@@ -1,0 +1,76 @@
+/* 基础样式 */
+img{
+    width: 100%;
+}
+
+.play{
+    width: 100%;
+    height: 100vh;
+    background: #161824;
+}
+.play .playbox{
+    position: relative;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+}
+.play .playbox .play_img_all{
+    padding-top: 1.7rem;
+    position: relative;
+}
+.play .playbox .play_img_all .play_img_box{
+    position: relative;
+    width: 5.92rem;
+    height: 5.92rem;
+    margin: auto;
+}
+.play .playbox .play_img_all .play_img_box::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* z-index: 1; */
+    background: url(//s3.music.126.net/mobile-new/img/disc.png?d3bdd10…=) no-repeat;
+    background-size: contain;
+}
+.play .playbox .play_img_all .play_img_box .small_img{
+    position: relative;
+    top: 1.12rem;
+    left: 1.15rem;
+    width: 3.68rem;
+    height: 3.68rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url(//s3.music.126.net/mobile-new/img/disc_default.png?7c9b3ad…=) no-repeat;
+    background-size: contain;
+}
+/* 播放按钮 */
+.play .playbox .play_img_all .play_top{
+    position: absolute;
+    width: 1.12rem;
+    height: 1.12rem;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 1.76rem;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+/* 歌名歌手 */
+.play .play_txt{
+    padding: 0 .7rem;
+    margin-top: .5rem;
+}
+.play .play_txt .play_txt_name{
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #fefefe;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

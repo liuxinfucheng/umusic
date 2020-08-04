@@ -33,3 +33,38 @@ export function searchInfo(params) {
         params
     })
 }
+
+// 歌单详情
+export function getPlayList(params) {
+    return http.get('/playlist/detail' , {
+        params
+    })
+}
+
+// 歌单评论
+export function getPlayComment(params) {
+    return http.get('/comment/playlist' , {
+        params
+    })
+}
+
+// 歌词接口
+export function getLyric(params){
+    return http.get('/lyric',{
+        params
+    })
+}
+
+// 获取音乐
+export function getUrl(params) {
+    return http.get('/song/url' , {
+        params
+    })
+}
+
+// 获取歌曲详情
+export function getSongDetail(params) {
+    return http.get('/song/detail' , {
+        params
+    })
+}

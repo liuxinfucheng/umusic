@@ -28,6 +28,7 @@ export default class Search extends React.Component{
 
     
     render(){
+        // console.log(this.inpVal);
         const {searchHotList , searchList} = this.state
         let valFlag = ''
         if(this.inpVal.current){
@@ -56,7 +57,14 @@ export default class Search extends React.Component{
                       className="m-input">
                     <div className="coverinput">
                         <i className='iconfont icon-fangdajing'></i>
-                        <input type="text" ref={this.inpVal} name='search' className='input' placeholder='搜索歌曲、歌手、专辑' autoComplete='off'/>
+                        <input 
+                            onKeyUp={this.enter.bind(this)} 
+                            type="text" 
+                            ref={this.inpVal} 
+                            name='search' 
+                            className='input' 
+                            placeholder='搜索歌曲、歌手、专辑' 
+                            autoComplete='off'/>
                         {/* <label className="holder">搜索歌曲、歌手、专辑</label> */}
                         {
                             valFlag ? <i onClick={this.clearInfo.bind(this)} className='iconfont icon-chahao'></i> : ''
@@ -128,7 +136,8 @@ export default class Search extends React.Component{
     }
 
     getInput(e){
-
+        // 自己输入的时候，重新渲染
+        this.setState({})
     }
 
     //  清空事件
@@ -142,6 +151,16 @@ export default class Search extends React.Component{
     // 跳转播放界面
     goPlay(id){
         console.log(id);
+    }
+
+    // 键盘事件
+    enter(e){
+        // 按下回车，搜索结果
+        if(e.keyCode === 13){
+            if(e.target.value != ''){
+                this.getSearch(e.target.value)
+            }
+        }
     }
 
     // 搜索事件
